@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Van Life Game 2 | By Reid JS</title>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="phaser" />
+</body>
+<script type="module">
+  import * as Phaser from "phaser"
+  import start from "./start.scene.js"
+  var WINDOW_HEIGHT = window.innerHeight
+  var WINDOW_WIDTH = window.innerWidth
+
+  const config = {
+    type: Phaser.AUTO,
+    width: WINDOW_WIDTH,
+    height: WINDOW_HEIGHT,
+    input: {
+      touch: {
+        capture: true
+      }
+    },
+    scene: [start],
+    // scene: [start, level1],
+    // scene: [level1, start],
+    backgroundColor: '#444',
+  }
+
+  const game = new Phaser.Game(config)
+</script>
+
+</html>
