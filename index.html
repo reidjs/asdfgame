@@ -18,6 +18,7 @@
 <script type="module">
   import * as Phaser from "phaser"
   import start from "./start.scene.js"
+  import battle from "./battle.scene.js"
   var WINDOW_HEIGHT = window.innerHeight
   var WINDOW_WIDTH = window.innerWidth
 
@@ -30,9 +31,8 @@
         capture: true
       }
     },
-    scene: [start],
-    // scene: [start, level1],
-    // scene: [level1, start],
+    // scene: [start],
+    scene: [battle],
     backgroundColor: '#444',
   }
 
