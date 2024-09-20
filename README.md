@@ -1,15 +1,16 @@
 # ASDF GAME
-consider renaming this directory to ASDFGAME
 September 19, 2024
 An endless horde of conditional logic flows up from the bottom of the screen
 
-```
-... (more and more incoming)
+```js
+(A) (S)
 (A | S) (A) (A)
 (F) (A & D) (F)
 (S | D | F) (S)
 (S) (A) (F) (D)
+// ... (new row incoming from bottom after each input)
 
+// Player input: 'AS' (spacebar), then all matching get destroyed
 ```
 
 You must determine which 
@@ -22,7 +23,7 @@ For example, the player presses
 and that removes (A | S), (A), (S), etc
 the characters above them fall downwards
 
-
+Consider making in node or python with blessed 
 
 
 September 19, 2024
